@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        custom:  ["Cotoris", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -52,6 +55,16 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        custom: {
+          'primary-f': "#5B0017",
+          'primary-q': "#844051",
+          'primary-h': "#AD808B",
+          'primary-w': "#D6BFC5",
+          'secondary-f': "#CC9D2F",
+          'secondary-q': "#D8B663",
+          'secondary-h': "#E5CE97",
+          'secondary-w': "#F2E7CB", 
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
