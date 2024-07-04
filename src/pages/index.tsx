@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import MainLayout from "@/layout/main/MainLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main>
+    <MainLayout>
       <h1 className="font-custom font-bold text-xl">Landpage Restaurant</h1>
 
       <div className="flex items-center">
@@ -18,6 +19,6 @@ export default function Home() {
         <div className="bg-custom-secondary-h w-10 h-10"></div>
         <div className="bg-custom-secondary-w w-10 h-10"></div>
       </div>
-    </main>
+    </MainLayout>
   );
 }
