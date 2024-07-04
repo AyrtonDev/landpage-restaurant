@@ -5,10 +5,8 @@ type Props = {
 }
 
 export const Container = ({ children }: Props) => (
-  <header className="w-full flex items-center justify-center h-48 bg-transparent">
-    <div className="max-w-7xl w-full h-full px-2 py-4 flex items-center justify-between">
+  <header className="max-w-7xl w-full h-48 px-2 py-4 flex items-center justify-between">
       {children}
-    </div>
   </header>
 )
 
@@ -21,7 +19,7 @@ export const LinkGroup = ({ children }: Props) => (
 export const LinkAnchor = ({ href, children }: Props & { href: string }) => (
   <Link
     href={href}
-    className="text-2xl font-custom text-custom-primary-f hover:text-custom-primary-q"
+    className="text-2xl font-custom text-white hover:text-custom-secondary-q transition ease-in-out"
   >
     {children}
   </Link>

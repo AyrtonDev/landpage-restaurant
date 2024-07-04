@@ -11,6 +11,8 @@ export default function Header() {
         <S.LinkAnchor href="/menu">Menu</S.LinkAnchor>
         <S.LinkAnchor href="/venue">Venue</S.LinkAnchor>
       </S.LinkGroup>
+
+      {/* Button here */}
     </S.Container>
   );
 };
