@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "font-[Cotoris]  text-[#CC9D2F] w-171px h-63px inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "font-[Cotoris] w-171px h-63px inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -15,9 +15,9 @@ const buttonVariants = cva(
         outline:
           "border-[3px] border-custom-secondary-f rounded-none hover:border-custom-secondary-w hover:bg-custom-secondary-w active:bg-custom-primary-f" ,
         primary:
-          "bg-custom-secondary-f text-custom-primary-f rounded-none ",  
+          "border-[2px] border-r-[1px] border-custom-secondary-f bg-custom-secondary-f text-custom-primary-f rounded-none hover:bg-custom-secondary-q active:bg-custom-primary-f active:text-custom-secondary-f", 
         secondary:
-          "border-[3px] border-custom-secondary-f rounded-none hover:border-custom-secondary-w hover:bg-custom-secondary-w active:bg-custom-primary-f",
+          "border-[2px] text-custom-primary-f border-custom-secondary-f rounded-none hover:bg-custom-secondary-q active:bg-custom-primary-f active:text-custom-secondary-f",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
