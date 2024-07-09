@@ -1,21 +1,16 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import { Button } from "@/components/ui/button"
-import ButtonHeader from "@/components/ui/buttonHeader";
-import ButtonTernary from "@/components/ui/buttonTernary";
-
+import MainLayout from "@/layout/main/MainLayout";
+import { CldImage } from "next-cloudinary";
+import { cloudinaryImages } from "@/constants/cloudinary";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-4">      
-        <ButtonHeader>Book Now</ButtonHeader>
-        
-        <Button variant={"secondary"}>Our Menu</Button>
-        
-        <ButtonTernary>Our Venue</ButtonTernary>
+    <MainLayout>
+      <h1 className="font-custom font-bold text-xl">Landpage Restaurant</h1>
 
-    </main>
+      <CldImage  width={1000} height={1000} alt="Sample" src={cloudinaryImages.main} />
+    </MainLayout>
   );
 }
