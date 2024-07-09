@@ -80,3 +80,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+.ternary-style{
+  background-color: transparent; /* Cor amarela */
+    padding: 4px;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  
+}
+.ternary-style::before{
+  content: '';
+  position: absolute;
+    top: 10px;
+    left: -2px;
+    right: 10px;
+    bottom: -2px;
+    border: 2px solid #D4A017;
+    z-index: -10;
+}
+.ternary-style:hover{
+    padding: 0px;
+    border-color: #CC9D2F;
+}
+
+.ternary-style:hover::before{
+  border-color: #CC9D2F;
+}
